@@ -32,6 +32,13 @@ a{
 .flex{
     display: flex;
 }
+.column{
+    flex-direction: column;
+}
+
+.active{
+    border-left: 3px solid var(--underline);
+}
 
 /*#endregion utility */
 
@@ -44,14 +51,15 @@ a{
     z-index: 1;
     top: 0;
     left: 0;
-    overflow-x: hidden;
+    
 }
 
 .sidenav >img{
     padding: 20px 20px;
 }
 
-.top-nav img{
+.top-nav img,
+.sidenav-footer img{
 display: inline;
 height: 25px;
 vertical-align: middle;
@@ -84,12 +92,27 @@ color: var(--textprimay);
     vertical-align: middle;
 
 }
-.sidenav-middle{
+.sidenav-middle,
+.sidenav-footer{
     padding: 20px 20px;
     line-height: 40px;
 }
 
+.playlist {
+    height: 35vh;
+    overflow-x: hidden; 
+    
+}
+.sidenav-footer{
+    margin-top: auto;
+}
+.user{
 
+    background-color: gray;
+    border-radius:50%;
+    padding: 1px;
+    margin: 2px;
+}
 
 /*#endregion sidenav */
 
@@ -118,7 +141,7 @@ main{
     text-transform: uppercase;
     color: var(--textprimay);
     border: 2px solid var(--textprimay);
-    padding: 15px;
+    padding: 15px 50px;
     border-radius: 30px;
     margin-right: 10px;
 }
