@@ -66,7 +66,8 @@ i{
 }
 
 .sidenav >img{
-    padding: 20px 20px;
+    width:150px;
+    padding:20px 20px;
 }
 
 .top-nav img,
@@ -103,19 +104,21 @@ color: var(--textprimay);
     vertical-align: middle;
 
 }
-.sidenav-middle,
-.sidenav-footer{
+.sidenav-middle{
     padding: 20px 20px;
-    line-height: 40px;
+    line-height: 25px;
 }
 
 .playlist {
-    height: 35vh;
+    height: 150px;
     overflow-x: hidden; 
     
 }
 .sidenav-footer{
     margin-top: auto;
+    padding: 0 20px;
+    line-height: 25px;
+   
 }
 .user{
 
