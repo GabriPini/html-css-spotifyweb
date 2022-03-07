@@ -40,12 +40,14 @@ a{
     border-left: 3px solid var(--underline);
 }
 
+
+
 /*#endregion utility */
 
 /*#region sidenav */
 .sidenav{
     background-color: var(--sidebg);
-    width: 200px;
+    width: 250px;
     height: calc(100% - 100px);
     position: fixed;
     z-index: 1;
@@ -125,7 +127,7 @@ main{
  
 .main-bar{
     background-color: rgba(0, 0, 0, 0.301);
-    width: calc(100% - 200px);;
+    width: calc(100% - 250px);;
     height:100px;
     position: fixed;
     z-index: 1;
@@ -162,4 +164,87 @@ footer{
     left: 0;
     overflow-x: hidden;
 }
+
+  .control-bar{
+      padding-left: 10px;
+      align-self: center;
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .now-playing img{
+    width: 60px;
+    height: 60px;
+    filter: grayscale(1);
+    
+    
+ }
+
+    
+  .album-musician,
+  .album-title {
+    display: block;
+    
+    
+  }
+  
+  .album-info {
+    padding: 10px 20px;
+    font-weight: 500;
+    
+    
+  }
+  
+  .album-title {
+    color: var(--textprimay);
+    margin-bottom: 5px;
+  }
+  
+  .album-musician {
+    font-size: 13px;
+    color: var(--textsecondary);
+  }
+  
+  .like-save{
+      color: var(--textsecondary);
+      align-self: center;
+      padding-left: 20px;
+      word-spacing: 10px;
+  }
+
+ .like-save i:hover{
+     color: var(--textprimay);
+ }
+
+.play-controls{
+    align-self: flex-end;
+   
+}
+    
+  .control-play{
+      width: 500px;
+    align-self: flex-start;
+    color: var(--textprimay);
+    word-spacing: 20px;
+  }
+
+  .sound-bar{
+
+        width: 500px;
+        margin: 10px 30px;
+        color: #aaaaaa;
+        font-size: 11px;
+        justify-content: space-between;
+        
+  }
+ 
+ .progress-bar{
+    
+     height: 10px;
+     width: 80%;
+     border-radius: 10px;
+     background-color: rgb(85, 84, 84);
+ }
+
+  
 /* #endregion footer */
