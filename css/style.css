@@ -4,7 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+ul{
+    list-style: none;
+}
+
 /*#endregion common */
 :root{
     --sidebg: rgba(0, 0, 0, 1);
@@ -41,6 +47,50 @@ a{
     overflow-x: hidden;
 }
 
+.sidenav >img{
+    padding: 20px 20px;
+}
+
+.top-nav img{
+display: inline;
+height: 25px;
+vertical-align: middle;
+
+}
+
+.top-nav li{
+    padding: 5px 20px;
+    
+}
+
+.sidenav a{
+    color: var(--textsecondary);
+    font-weight: 500;
+}
+
+.sidenav a:hover,
+.sidenav i:hover{
+    color: var(--textprimay);
+    
+}
+
+.sidenav h5{
+color: var(--textprimay);   
+}
+
+.sidenav .fa-solid,
+.sidenav-middle{
+    color: var(--textsecondary);
+    vertical-align: middle;
+
+}
+.sidenav-middle{
+    padding: 20px 20px;
+    line-height: 40px;
+}
+
+
+
 /*#endregion sidenav */
 
 /* #region main */
@@ -67,10 +117,13 @@ main{
     font-weight: 500;
     text-transform: uppercase;
     color: var(--textprimay);
-    border: 3px solid var(--textprimay);
+    border: 2px solid var(--textprimay);
     padding: 15px;
     border-radius: 30px;
     margin-right: 10px;
+}
+.main-bar a:hover{
+    font-size: 20px;
 }
 
 /* #endregion main */
