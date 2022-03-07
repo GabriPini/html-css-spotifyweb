@@ -27,6 +27,10 @@ a{
 
 }
 
+i{
+    cursor: pointer;
+}
+
 /*#region utility */
 
 .flex{
@@ -172,6 +176,10 @@ footer{
       justify-content: space-between;
   }
 
+  .infos{
+      width: 20%;
+  }
+
   .now-playing img{
     width: 60px;
     height: 60px;
@@ -214,37 +222,101 @@ footer{
 
  .like-save i:hover{
      color: var(--textprimay);
+    
  }
 
 .play-controls{
     align-self: flex-end;
+    width: 50%;
    
 }
     
   .control-play{
-      width: 500px;
-    align-self: flex-start;
+    margin: auto;
+    width: 40%;
     color: var(--textprimay);
     word-spacing: 20px;
   }
 
   .sound-bar{
-
-        width: 500px;
-        margin: 10px 30px;
-        color: #aaaaaa;
+        align-self: flex-start;
+        width: 75%;
+        margin: 10px;
+        color: var(--textprimay);
         font-size: 11px;
         justify-content: space-between;
         
   }
- 
+  .fa-circle-play:hover{
+      font-size: 40px;
+   
+  }
  .progress-bar{
-    
-     height: 10px;
+     cursor: pointer;
+     margin-top: 5px;
+     height: 5px;
      width: 80%;
      border-radius: 10px;
      background-color: rgb(85, 84, 84);
  }
+ .played-music{
+     position: relative;
+    height: 5px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: var(--textsecondary)
+ }
+ 
+ .played-music:hover{
+     background-color: var(--underline);
+ }
 
-  
+ .played-music:hover .cerchio{
+     display: block;
+ }
+
+ .cerchio{
+     display: none;
+     background-color: #ffffff;
+     border-radius: 100%;
+     height: 20px;
+     width: 20px;
+     position: absolute;
+     top: -6px;
+     right:-10px;
+ }
+
+ .play-device-controls{
+     align-self: center;
+     color: var(--textprimay);
+     width: 15%;
+     justify-content: space-between;
+ }
+
+ .volume{
+    cursor: pointer;
+    margin: 5px;
+
+    height: 5px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(85, 84, 84);
+
+ }
+
+ .volume-set{
+    position: relative;
+    height: 5px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--textsecondary)
+ }
+
+ .volume-set:hover{
+    background-color: var(--underline);
+}
+
+.volume-set:hover .cerchio{
+    display: block;
+}
 /* #endregion footer */
