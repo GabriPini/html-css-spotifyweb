@@ -159,11 +159,11 @@ main{
 .main-bar a:hover{
     font-size: 20px;
 }
-
+/* end main-bar */
 .content{
     height: calc(100vh - 100px);
     width: calc(100vw - 250px);
-    position: absolute;
+    position: fixed;
     top: 100px;
     right: 0;
     
@@ -182,8 +182,35 @@ main{
 .sections a{
     color: var(--textsecondary);
 }
+/* end main nav */
 
+.recently-played{
+    color: var(--textprimay);
+    margin: 40px;
+    height: 350px;
+    width: calc(100vw - 250px);
+    column-gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.section-title{
+    color: var(--textprimay);
+    margin: 40px 0 0 40px ;
 
+}
+.card-album{
+    margin-top: 5px;
+    text-align: center;
+    line-height: 30px;
+    width: 180px;
+    
+}
+.card-album img{
+    width: 170px; 
+}
+.card-album span{
+    color: var(--textsecondary);
+}
 /* #endregion main */
 
 /* #region footer */
