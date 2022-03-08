@@ -43,11 +43,17 @@ i{
 .active-left{
     border-left: 3px solid var(--underline);
 }
+.active-left a{
+    margin-left:-5px ;
+}
 .active-bottom{
     
     border-bottom: 3px solid var(--underline);
 }
 
+.border{
+    border-radius: 100%;
+}
 
 
 
@@ -57,11 +63,12 @@ i{
 .sidenav{
     background-color: var(--sidebg);
     width: 250px;
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
+    
     
 }
 
@@ -110,10 +117,14 @@ color: var(--textprimay);
 }
 
 .playlist {
-    height: 150px;
-    overflow-x: hidden; 
+    min-height: 150px;
+    overflow-y: auto;
     
-}
+    
+   
+ } 
+    
+
 .sidenav-footer{
     margin-top: auto;
     padding: 0 20px;
@@ -134,7 +145,7 @@ color: var(--textprimay);
 
 main{
     background-color: var(--mainbg);
-    height: 100vh;
+    height: calc(100vh - 100px );
 }
  
 .main-bar{
@@ -169,6 +180,8 @@ main{
     position: fixed;
     top: 100px;
     right: 0;
+    overflow-y: auto;
+    /* mettere il margine per staccarlo  */
     
 }
 .content li{
@@ -180,17 +193,25 @@ main{
     padding-top: 30px;
     width: 100%;
     text-align: center;
+    line-height: 25px;
     
 }
 .sections a{
     color: var(--textsecondary);
 }
+.sections a:hover{
+    color: var(--textprimay);
+}
+
+
 /* end main nav */
 
-.recently-played{
+.recently-played,
+.created-for,
+.artists{
     color: var(--textprimay);
-    margin: 40px;
-    height: 350px;
+    margin: 10px -15px;
+    height: 100%;
     width: calc(100vw - 250px);
     column-gap: 10px;
     flex-wrap: wrap;
@@ -198,22 +219,47 @@ main{
 }
 .section-title{
     color: var(--textprimay);
-    margin: 40px 0 0 40px ;
+    margin: 30px 0px 0px 35px ;
+    line-height: 50px;
 
+}
+
+.section-title span{
+    color: var(--textsecondary);
+ 
 }
 .card-album{
     margin-top: 5px;
     text-align: center;
     line-height: 30px;
-    width: 180px;
+    width: 185px;
+    position: relative;
     
 }
 .card-album img{
     width: 170px; 
 }
+
+.card-album i{
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    opacity: 0;
+}
+.card-album img:hover{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.card-album:hover i{
+    opacity: 1;
+}
+
 .card-album span{
     color: var(--textsecondary);
 }
+
+
 /* #endregion main */
 
 /* #region footer */
