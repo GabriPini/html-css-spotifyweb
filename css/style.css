@@ -761,6 +761,11 @@ footer{
         font-size: 10px;
         width: 100%;
         word-spacing: 5px;
+        margin: 0 15px;
+    }
+    .control-bar {
+    padding-left: 0;
+    column-gap: 10px;
     }
 
     .sound-bar {
