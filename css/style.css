@@ -76,6 +76,16 @@ i{
 .sidenav >img{
     width:150px;
     padding:20px 20px;
+    animation: bounce-5 2s infinite linear;
+}
+@keyframes bounce-5 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
 }
 
 .top-nav img,
@@ -167,10 +177,41 @@ main{
     padding: 15px 50px;
     border-radius: 30px;
     margin-right: 10px;
+    animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+
+    
 }
+
+@keyframes pulse {
+    0%, 100% {
+      background-color: var(--underline);
+    }
+    50% {
+      background-color: rgb(0, 0, 0);
+    }
+  }
+  
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+    }
+  }
+  
 .main-bar a:hover{
     font-size: 20px;
+    
 }
+
 /* end main-bar */
 .content{
     height: calc(100vh - 100px);
@@ -195,10 +236,14 @@ main{
 }
 .sections a{
     color: var(--textsecondary);
+    animation: bounce 2s linear;
 }
 .sections a:hover{
     color: var(--textprimay);
+    
 }
+
+
 
 
 /* end main nav */
@@ -237,10 +282,15 @@ main{
     width: 170px; 
 }
 
+.card-img{
+    position: relative;
+}
 .card-album i{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 15%;
-    left: 38%;
+    top: 35%;
+    left: 0;
     opacity: 0;
 }
 .card-album img:hover{
@@ -802,3 +852,5 @@ footer{
  }    
 
  /* #endregion Mediaqueary */
+
+ 
