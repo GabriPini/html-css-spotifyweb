@@ -466,7 +466,8 @@ footer{
             height:100%;
             width: calc(100vw - 100px);
             column-gap: 10px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow: hidden;
             
         }
         .card-album{
@@ -572,7 +573,8 @@ footer{
             height:100%;
             width: calc(100vw - 100px);
             column-gap: 10px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow: hidden;
             
         }
         .card-album{
@@ -721,7 +723,8 @@ footer{
     height:100%;
     width: calc(100vw - 100px);
     column-gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
     
     }
     .card-album{
