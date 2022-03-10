@@ -230,7 +230,7 @@ main{
     height: 100px;
     width: calc(100vw - 250px);
     position: fixed;
-    top: 450px;
+    top: 430px;
     right: 0;
   
 }
@@ -252,7 +252,57 @@ main{
     margin-left: 20px;
 }
 
+.playlist-detail{
+    height: 16px;
+    width: calc(100vw - 340px);
+    position: fixed;
+    top: 530px;
+    color: white;
+    right: 0;
+    padding-left: 25px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+.playlis-line{
+    width: calc(100vw - 310px);
+    position: fixed;
+    top: 560px;
+    border-color: rgba(138, 137, 137, 0.712);
+    right: 0;
+    margin-right: 40px;
+   
+}
+.playlist-list {
+    height:50px;
+    width: calc(100vw - 250px);
+    color: white;
+    margin: 20px 0;
+    padding-left: 25px;
+    padding-right: 80px;
+    justify-content: space-between;
+    
+}
 
+.playlist-list img{
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+
+.music{
+    vertical-align: middle;
+    height: 50px;
+    align-items: center;
+
+}
+.maincont{
+height: calc(100vh - 100px);
+width: calc(100vw - 250px);
+position: fixed;
+top: 580px;
+right: 0;
+
+}
    
 
 /* end main-bar */
