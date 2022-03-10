@@ -14,7 +14,7 @@ ul{
 
 :root{
     --sidebg: rgba(0, 0, 0, 1);
-    --mainbg: rgba(20, 25, 34, 1);
+    --mainbg: rgb(27, 27, 27);
     --footerbg: rgba(40, 40, 40, 1);
     --textsecondary: rgba(125, 127, 132, 1);
     --underline: rgba(173, 255, 47, 1);
@@ -157,9 +157,9 @@ main{
 }
  
 .main-bar{
-    background-color: rgba(0, 0, 0, 0.301);
+    background-color: rgba(165, 163, 163, 0.301);
     width: calc(100% - 250px);;
-    height:100px;
+    height:400px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -406,7 +406,6 @@ footer{
         flex-grow: 6;
         column-gap: 10px;
         align-self: center;
-        
     }
     .fa-circle-play:hover{
         font-size: 40px;

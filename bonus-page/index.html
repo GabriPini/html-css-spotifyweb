@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <main>
+       <!-- barran navigazione laterale -->
+    <div class="sidenav flex column">
+        <img src="img/logo.svg" alt="">
+        <ul class="top-nav">
+            <li class="active-left"><a href=""> <img src="img/home.svg" alt=""> <span>Home</span> </a></li>
+            <li><a href=""> <img src="img/search.svg" alt=""> <span>Cerca </span> </a></li>
+            <li><a href=""> <img src="img/libreria.svg" alt=""> <span>La tua libreria </span> </a></li>
+        </ul>
+        
+        <div class="create-play">
+            <h5>PLAYLIST</h5>
+              <a href="#"><i class="fa-solid fa-square-plus fa-2x"></i> Crea Playlist</a>
+        </div>
+        <div class="sidenav-middle">
+          <div class="playlist"> 
+            <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+            </ul>
+         </div>
+        </div>
+
+        <div class="sidenav-footer">
+
+            <a href=""><img src="img/download.svg" alt=""> <span>Installa app</span></a>
+            <hr>
+            <a href=""><img class="user" src="img/profile.svg" alt=""> <span> John Doe </span></a>
+
+
+        </div>
+
+
+    </div>
+     <!-- fine barra navigazione laterale -->
+     <!-- barra principale main -->
+    <div class="main-bar flex">
+        <a href="#"> Effettua L'upgrade</a>
+    </div>
+    <!-- fine barra pricipale main -->
+    <!-- main vero e propio -->
+    <div class="content flex column">
+       
+            
+    </div>
+        
+    </main>
+    <!-- fine main -->
+
+    <!-- footer con barra muscia -->
+    <footer class="flex">
+        
+       <div class="control-bar flex">
+           <div class="infos flex">
+             <div class="now-playing">
+                <img src="img/sinister.jpeg" alt="">
+            
+            </div>
+        
+            <div class="album-info">
+                    <span class="album-title"> Sinister</span>
+                    <span class="album-musician"> Brano Nome</span>
+            </div>
+            
+            <div class="like-save">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+            </div>
+
+          </div>
+            <div class="play-controls flex column">
+                <div class="control-play ">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                
+                </div>
+                
+                <div class="sound-bar flex">
+                    <span>0:25</span>
+
+                    <div class="progress-bar">
+                        <div class="played-music"><button class="cerchio"></button></div>
+                      </div>
+
+                    <span>4:35</span>
+                </div>
+                
+            </div>
+
+            <div class="play-device-controls flex">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume">
+                    <div class="volume-set">
+                    <button class="cerchio"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+   </footer>
+   <!-- fine footer con barra muiscia -->
+    
+</body>
+</html>
