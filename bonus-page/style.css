@@ -56,7 +56,9 @@ i{
     border-radius: 100%;
 }
 
-
+.color-grey{
+    color: rgb(0, 0, 0);
+}
 
 /*#endregion utility */
 
@@ -157,11 +159,10 @@ main{
 }
  
 .main-bar{
-    background-color: rgba(165, 163, 163, 0.301);
-    width: calc(100% - 250px);;
+    background: linear-gradient(rgb(143, 143, 143), rgb(45, 45, 46));    
+    width: calc(100% - 250px);
     height:400px;
     position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
 }
@@ -171,36 +172,60 @@ main{
     justify-content: end;
     margin-top: 20px;
 }
+.left{
+    justify-content: start;
+    margin-left: 10px;
+    font-size: 20px;
+   
+}
 .button a{
     font-weight: 500;
     text-transform: uppercase;
     color: var(--textprimay);
-    border: 1px solid var(--textprimay);
     background-color: rgb(41, 40, 40);
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 30px;
     margin-right: 10px;
     
 }
 .button img{
-    width: 25px;
+    width: 20px;
     vertical-align: middle;
 }
  .button a:hover{
     font-size: 20px;
-    
 }
 
-/* end main-bar */
 .content{
-    height: calc(100vh - 100px);
+    height: 280px;
     width: calc(100vw - 250px);
     position: fixed;
     top: 100px;
     right: 0;
     overflow-y: auto;
+    margin-left: 10px;
+    filter:drop-shadow(2px 4px 6px black)
     
 }
+.playlist-img img{
+   width: 280px;
+   margin-left: 10px;
+   
+}
+
+.playlist-infos{
+    color: white;
+    padding-left: 20px;
+    align-self: flex-end;
+    
+    
+}
+.playlist-infos h1{
+  font-size: 85px;
+  line-height: 130px;
+}
+
+/* end main-bar */
 
 /* #endregion main */
 
@@ -234,7 +259,7 @@ footer{
     width: 60px;
     height: 60px;
     filter: grayscale(1);
-    
+    display: none;
     
  }
 
@@ -249,7 +274,7 @@ footer{
   .album-info {
     padding: 10px 20px;
     font-weight: 500;
-    
+    display: none;
     
   }
   
@@ -268,6 +293,7 @@ footer{
       align-self: center;
       padding-left: 20px;
       word-spacing: 10px;
+      display: none;
     }
     
     .like-save i:hover{
