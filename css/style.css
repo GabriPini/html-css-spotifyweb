@@ -69,6 +69,7 @@ i{
     z-index: 1;
     top: 0;
     left: 0;
+    row-gap: 10px;
     
     
 }
@@ -97,7 +98,7 @@ vertical-align: middle;
 }
 
 .top-nav li{
-    padding: 5px 20px;
+    padding: 10px 20px;
     
 }
 
@@ -124,7 +125,7 @@ color: var(--textprimay);
 }
 .sidenav-middle{
     padding: 5px 20px;
-    line-height: 25px;
+    line-height: 35px;
     overflow: auto;
 }
 .create-play{
@@ -231,7 +232,7 @@ main{
     padding-top: 30px;
     width: 100%;
     text-align: center;
-    line-height: 25px;
+    line-height: 35px;
     
 }
 .sections a{
@@ -450,9 +451,10 @@ footer{
     .play-device-controls{
         align-self: center;
         color: var(--textprimay);
-        width: 15%;
+        width: 20%;
         justify-content: space-between;
         flex-grow: 1;
+        column-gap: 10px;
     }
     
     .volume{
@@ -569,7 +571,7 @@ footer{
         padding-left: 50px;
     }
     .control-play{
-        font-size: 20px;
+        font-size: 15px;
         
     }
 
@@ -581,7 +583,6 @@ footer{
     }
 
     .play-device-controls {
-       
         width: 30%;
         font-size: 13px;
     }
@@ -667,9 +668,9 @@ footer{
         padding-left: 50px;
     }
     .control-play{
-        font-size: 16px;
+        font-size: 12px;
         width: 100%;
-        word-spacing: 15px;
+        word-spacing: 10px;
     }
 
     .sound-bar {
@@ -691,7 +692,7 @@ footer{
 
 }
 
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 368px){
 
     .sidenav{
         width: 50px;
@@ -816,7 +817,7 @@ footer{
     .control-play{
         font-size: 10px;
         width: 100%;
-        word-spacing: 5px;
+        word-spacing: 10px;
        
     }
     .control-bar {
